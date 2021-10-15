@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Consultar_Vendedores</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--CSS Page-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h4><!--<span class="adm_ven"></span>--><span>Administrar Vendedores</span></h4>
+        </div>
+        <!--Secciones-del-tablero-->
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../mod_vendedor/" class="active"><img src="../img/icon/search_black_24dp.svg" width="30px" height="30px"><span class="con_ven"></span><span>Consultar Vendedores</span></a>
+                </li>
+                <li>
+                    <a href="../mod_vendedor/crear_ven.html"><img src="../img/icon/save_white_24dp.svg" width="30px" height="30px"><span class="crear_ven"></span><span>Crear Vendedores</span></a>
+                </li>
+                <li>
+                    <a href="../mod_vendedor/mod_ven.html"><img src="../img/icon/create_white_24dp.svg" width="30px" height="30px"><span class="mod_ven"></span><span>Modificar Vendedores</span></a>
+                </li>
+                <li>
+                    <a href="../mod_vendedor/elim_ven.html"><img src="../img/icon/delete_white_24dp.svg"><span class="elim_ven"></span><span>Eliminar Vendedores</span></a>
+                </li>
+                <li>
+                    <a href="../"><img src="../img/icon/home_white_24dp.svg"><span class="inicio"></span><span>Inicio</span></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <form id="consul_vend">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Tipo Documento:</h6>
+                            <select class="formscontrol-div" style="width:inherit;" id="tipdoc_vend">
+                                <option selected disabled>Seleccione...</option>
+                                <option value= "CC">Cédula de ciudadanía</option>
+                                <option value= "TI">Tarjeta de Identidad</option>
+                                <option value= "CE">Cédula de extranjería</option>
+                                <option value= "NIT">NIT</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Numero Documento:</h6>
+                            <input type="number"  class="formscontrol-div" style="width:inherit;" id="numdoc_vend" placeholder="Numero de Documento">
+                        </div>
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Nombre Vendedor:</h6>
+                            <input type="text"  class="formscontrol-div" id="nom_vend" placeholder="Nombre de Vendedor">
+                        </div> 
+                        <div class="col-sm-3" style="text-align: center; margin: auto;">
+                            <button type="button"  class="btn btn-outline-primary" id="butt_cons_vend">Consultar</button>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Entidad:</h6>
+                            <input type="text"  class="formscontrol-div" id="ent_vend" placeholder="Entidad">
+                        </div>
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Telefono:</h6>
+                            <input type="text"  class="formscontrol-div" id="tel_vend" placeholder="Telefono">
+                        </div>
+                        <div class="col-sm-3">
+                            <h6 class="card-title">Ciudad:</h6>
+                            <input type="text"  class="formscontrol-div" id="ciu_vend" placeholder="Ciudad">
+                        </div> 
+                    </div>
+                </div>
+            </form>
+
+            <!--Tabla-->
+            <div class="recent-grid-user">
+                <div class="table-responsive">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <th>Tipo Documento</th>
+                                <th>Numero Documento</th>
+                                <th>Nombre Vendedor</th>
+                                <th>Entidad</th>
+                                <th>Telefono</th>
+                                <th>Ciudad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>13456789</td>
+                                <td>Jhon Deiby Salazar</td>
+                                <td>Paga Todo</td>
+                                <td>3003113232</td>
+                                <td>Bogotá</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>1020458963</td>
+                                <td>Victor Manuel Ciro Ledesma</td>
+                                <td>Interrapidisimo</td>
+                                <td>3203158789</td>
+                                <td>Bogotá</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>92568879</td>
+                                <td>Julian Andres Quesada</td>
+                                <td>Servientrega</td>
+                                <td>3112554141</td>
+                                <td>Cartagena</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Extranjerida</td>
+                                <td>12569966</td>
+                                <td>Andres Hernandez Camargo</td>
+                                <td>Interrapidisimo</td>
+                                <td>3168952120</td>
+                                <td>Bogotá</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>40385662</td>
+                                <td>Manuel Garzón Sanchez</td>
+                                <td>Paga Todo</td>
+                                <td>3122669897</td>
+                                <td>Medellín</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>10195602123</td>
+                                <td>Julieta Milena Quesada</td>
+                                <td>El Solecito Caliente</td>
+                                <td>3012668582</td>
+                                <td>Medellín</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Extranjerida</td>
+                                <td>21556213</td>
+                                <td>Marlen Salazar Orozco</td>
+                                <td>Madremia</td>
+                                <td>305226889</td>
+                                <td>Cali</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>1025562133</td>
+                                <td>Katherine Gil Ortiz</td>
+                                <td>Mermelada Catalina</td>
+                                <td>3112295051</td>
+                                <td>Bogotá</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>40256887</td>
+                                <td>Barbara Ortiz Bermudez</td>
+                                <td>Servientrega</td>
+                                <td>3213659797</td>
+                                <td>Bucaramanga</td>
+                            </tr>
+                            <tr>
+                                <td>Cedula Ciudadania</td>
+                                <td>86521321</td>
+                                <td>Julian Andres Salazar Rayo</td>
+                                <td>Servientrega</td>
+                                <td>3006118585</td>
+                                <td>Bogotá</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

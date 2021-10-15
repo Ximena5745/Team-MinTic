@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin_Usuarios</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--CSS Page-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/ventana.js"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span>Administración de usuarios</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="../img/icon/table_view_white_24dp.svg" alt=""><span class="home"></span>
+                    <span>Visualizacion</span></a>
+                </li>
+                <li>
+                    <a href="create.html" ><img src="../img/icon/add_circle_outline_white_24dp.svg" alt=""><span class="product"></span>
+                    <span>Creación</span></a>
+                </li>
+                <li>
+                    <a href="modification.html" ><img src="../img/icon/edit_white_24dp.svg" alt=""><span class="salesman"></span>
+                    <span>Modificacón</span></a>
+                </li>
+                <li>
+                    <a href="remove.html" class="active"><img src="../img/icon/delete_black_24dp.svg" alt=""><span class="stock"></span>
+                    <span>Eliminación</span></a>
+                </li>
+                <li>
+                    <a href="../index.html"><img src="../img/icon/home_white_24dp.svg" alt=""><span class="home"></span>
+                    <span>Inicio</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!--ventana-->
+            <div class="ventana" id="vent">
+                <div id="cerrar"><a href="javascript:cerrar()"><img src="../img/icon/cancel_black_24dp.svg" alt=""></a></div>
+                <div class="cent">ESTAS SEGURO QUE QUIERES ELIMINAR ESTE USUARIO</div> 
+
+                <div class="buton">
+
+                    <a href="javascript:cerrar()"><button type="button" class="btn btn-success">SI</button></a>
+                    <a href="javascript:cerrar()"><button type="button" class="btn btn-danger">NO</button></a>
+
+                </div>
+            </div>
+            <!--Tabla-->
+            <table class="table">
+                <thead>
+                  <tr>
+                    <td scope="col">Nombre del usuario</td>
+                    <td scope="col">Genero</td>
+                    <td scope="col">Tipo de idenficacion</td>
+                    <td scope="col">Numero de identificacion</td>
+                    <td scope="col">Correo electronico</td>
+                    <td scope="col">Numero de telefono</td>
+                    <td scope="col">Rol del sistema</td>
+                    <td scope="col">Eliminar</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark Otto</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>214214</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>4543345</td>
+                    <td>adm</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Jacob Thornton</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>214214</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>4543345</td>
+                    <td>adm</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Larry the Bird</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>214214</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>4543345</td>
+                    <td>adm</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>julio cesar</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>214214</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>3004355</td>
+                    <td>mercante</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>andres julio</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>234562</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>4543345</td>
+                    <td>venta</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Victor Manue</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>10004322</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>30145352</td>
+                    <td>vendedor</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>Jhon Deiby Salazar</td>
+                    <td>masculino</td>
+                    <td>cedula de ciudadania</td>
+                    <td>214214</td>
+                    <td>Mark_Otto@geef.com</td>
+                    <td>3005953</td>
+                    <td>adm</td>
+                    <td style="text-align: center;"><a href="javascript:abrir()"><img src="../img/icon/delete_black_24dp.svg"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>

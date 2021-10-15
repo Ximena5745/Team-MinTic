@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Administración de usuarios</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--CSS Page-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span>Administración de usuarios</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="../img/icon/table_view_white_24dp.svg" alt=""><span class="home"></span>
+                    <span>Visualizacion</span></a>
+                </li>
+                <li>
+                    <a href="create.html" class="active"><img src="../img/icon/add_circle_outline_black_24dp.svg" alt=""><span class="product"></span>
+                    <span>Creación</span></a>
+                </li>
+                <li>
+                    <a href="modification.html"><img src="../img/icon/edit_white_24dp.svg" alt=""><span class="salesman"></span>
+                    <span>Modificacón</span></a>
+                </li>
+                <li>
+                    <a href="remove.html"><img src="../img/icon/delete_white_24dp.svg" alt=""><span class="stock"></span>
+                    <span>Eliminación</span></a>
+                </li>
+                <li>
+                    <a href="../index.html"><img src="../img/icon/home_white_24dp.svg" alt=""><span class="home"></span>
+                    <span>Inicio</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="sub_titulo">
+                <h2>Añadir usuario</h2>
+              </div>
+            <!--Formulario-->
+                <div class="formulario">
+                
+                    <form name="registro">
+
+                        <p>Nombre completo</p> 
+                        <input type="text" name="Nombre completo" placeholder="Ingresa el nombre" id="Nombre completo">
+                        <br />
+                        <br>
+                        <p>Genero</p> 
+                        <input type="text" name="Genero" placeholder="Ingresa el genero" id="Genero">
+                        <br>
+                        <br>
+                        <p>Tipo de identinficacion</p>
+                        <select name="Tipo de identificacion" id="Tipo de identificacion">
+                            <option value="">seleciona una opcion</option>
+                            <option value="Cedula de ciudadania">Cedula de ciudadania</option>
+                            <option value="Cedula de extranjeria">Cedula de extranjeria</option>
+                            <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                        </select>
+                        <br />
+                        <br>
+                        <p>Numero de identificacion</p>
+                        <input type="text" name="Numero de identificacion" placeholder="Ingresa el numero de identificacion" id="Numero de identificacion">
+                        <br />
+                        <br>
+                        <p>Correo electronico</p>
+                        <input type="email" name="Correo electronico" placeholder="Ingresa el correo" id="Correo electronico">
+                        <br />
+                        <br>
+                        <p>Numero de telefono</p>
+                        <input type="text" name="Numero de telefono" placeholder="Ingresa el numero de telefono" id="Numero de telefono">
+                        <br />
+                        <br>
+                        <p>Rol del sistema</p>
+                        <input type="text" name="Rol del sistema" placeholder="Ingresa el rol del sistema" id="Rol del sistema">
+                        <br />
+                        <br>
+                        <button type="submit" class="btn btn-primary">Añadir usuario</button>
+                        <br />
+
+                    </form>
+                </div>  
+        </main>
+    </div>
+
+</body>
+
+</html>

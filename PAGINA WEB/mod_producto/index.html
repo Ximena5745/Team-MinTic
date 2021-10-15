@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"">
+    <title>Producto</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span></span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+    <nav class="nav">
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="" class="active" ><span class="home"></span>
+                    <img src="../img/icon/icons8-home.svg" class="list__img">
+                    <span>Módulo de Productos</span></a>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Productos</a>
+                        <img src="../img/icon/arrow_drop_down_white_24dp.svg" class="list__arrow">
+                    </div>
+
+                    <ul class="list__show">
+                        <li class="list__inside">
+                            <a href="./registro_producto.html" class="nav__link nav__link--inside">Registro de productos</a>
+                        </li>
+
+                        <li class="list__inside">
+                            <a href="./listado_productos.html" class="nav__link nav__link--inside">Información de productos</a>
+                        </li>
+                        <li class="list__inside">
+                            <a href="./edicion_productos.html" class="nav__link nav__link--inside">Edición de productos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="#" class="nav__link">Inventario</a>
+                        <img src="../img/icon/arrow_drop_down_white_24dp.svg" class="list__arrow">
+                    </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="./reg.inventario.html" class="nav__link nav__link--inside">Registro de Inventario</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="./almacenamiento_productos.html" class="nav__link nav__link--inside">Almacenamiento de productos</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="../index.html" class="nav__link">Volver</a>
+                        <img src="../img/icon/icons8-return-30.png" class="list__return">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-content">
+         <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+    </div>
+    <script src="../javascript/main.js"></script>
+</body>
+
+</html>

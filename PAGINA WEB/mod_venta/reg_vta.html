@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--JS Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--CSS Page-->
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/ventana.js"></script>
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span>Ventas</span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../index.html" class="product"><span class="product"></span>
+                    <img src="../img/icon/home_white_24dp (1).svg" width="30px" height="30px">Inicio</span></a>
+                </li>
+                <li>
+                    <a href="Consulta de ventas" class="product"><span class="product"></span>
+                    <a href="index.html"><img src="../img/icon/search_white_24dp.svg" width="30px" height="30px">Consulta de ventas/ Periodo</a>
+                    
+                </li>
+                <li>
+                    <a href="Registro de ventas" class="active"><span class="home"></span>
+                    <span><img src="../img/icon/save_black_24dp.svg" width="30px" height="30px">Registro de ventas</span></a>
+                </li>
+                <li>
+                    <a href="Consulta individual"><span class="product"></span>
+                    <a href="cons_ind.html"><img src="../img/icon/search_white_24dp.svg" width="30px" height="30px">Consulta Individual</a>
+                </li>
+                <li>
+                    <a href="Modificación de ventas"><span class="salesman"></span>
+                    <a href="md_rg_venta.html"><img src="../img/icon/create_white_24dp.svg" width="30px" height="30px">Modificación de ventas</a>
+                </li>
+                <li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+            <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+    <!--Tabla-->
+    <main>
+        <div class="container"> 
+            <div class="row"> 
+                <div class="title">
+                    <h2>Registro de venta </h2>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+    
+
+    <br>
+            <div class='field'>
+                <label class="labelform">No. Documento Cliente</label>
+                <input type="number" class="formscontrol" placeholder="Ingrese No. Documento cliente" required autocomplete>
+            </div>
+            <div class='field'>
+                <label class="labelform">Item</label>
+                <input type="text" class="formscontrol" placeholder="Registre item" required autocomplete>
+            </div>
+            <div class='field'>
+                <label class="labelform">Descuento</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese descuento autorizado" required autocomplete>
+            </div>
+            <div class='field'>
+                <label class="labelform">No. Unidades vendidas</label>
+                <input type="text" class="formscontrol" placeholder="Registre No. unidades vendidas" required autocomplete>
+            </div>
+            
+    <br>
+
+    <div class="col-sm-3" style="text-align: center; margin: auto;">
+        <button type="button" onclick= "aceptar();" class="btn btn-outline-primary" id="butt_cons_vend">Registrar</button>
+    </div>
+
+</main>

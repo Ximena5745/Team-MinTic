@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span></span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="../mod_producto/index.html" ><span class="home"></span>
+                    <span>Modulo de Productos</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="stock"></span>
+                    <span>Registro de productos</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="salesman"></span>
+                    <span>Información de productos</span></a>
+                </li>
+                <li>
+                    <a href="" class="active"><span class="product"></span>
+                    <span>Actualización de Inventario</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+            <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+    <main>
+        <div class="container"> 
+            <div class="row"> 
+                <div class="title">
+                    <h2>Registro de inventario </h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <form action="#">
+            <div class='field'>
+                <label class="labelform">Producto</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese nombre del producto" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Lote</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese lote del producto" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Fecha de recepción</label>
+                <input type="datetime-local" class="formscontrol">
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Proveedor</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese proveedor" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Conteo de unidades</label>
+                <input type="number" class="formscontrol" placeholder="Ingrese número de unidades de producto" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Novedades</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese cualquier novedad que se presente con este lote" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Imagen del producto</label>
+                <!--<input type="submit" class="formcontrol" value="Cargar Imagen">-->
+                <button class="btn btn-outline-primary">Cargar Imagen</button>
+            </div><br>
+            <div class='field'>
+                <label class="labelform">Almacenamiento</label>
+                <input type="text" class="formscontrol" placeholder="Ingrese ubicación final del lote" required autocomplete>
+            </div><br>
+            <div class='field'>
+                <!--<input type="submit" class="formcontol" value="Guardar Información">-->
+                <button class="btn btn-outline-primary">Guardar Información</button>
+            </div>
+        </form>    
+    </main>
+
+</body>
+
+</html>

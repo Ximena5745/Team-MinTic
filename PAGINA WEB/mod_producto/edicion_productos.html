@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class="Inventario"></span> <span></span></h2>
+        </div>
+        <!--Secciones-del-tablero-->
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="./index.html" ><span class="home"></span>
+                    <span>Modulo de Productos</span></a>
+                </li>
+                <li>
+                    <a href=""><span class="product"></span>
+                    <span>Registro de productos</span></a>
+                </li>
+                <li>
+                    <a href="" ><span class="salesman"></span>
+                    <span>Información de productos</span></a>
+                </li>
+                <li>
+                    <a href=""class="active"><span class="stock"></span>
+                    <span>Edición de productos</span></a>
+                </li>
+                <li class="list__item list__item--click">
+                    <div class="list__button list__button--click">
+                        <a href="./index.html" class="nav__link">Volver</a>
+                        <img src="../img/icon/icons8-return-30.png" class="list__return">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+         <header>
+            <div>
+                <img src="../img/logo.png" width="60px" height="60px">
+            </div>
+            <div class="name-company">
+                <h2><span>Tecnosoluciones</span></h2>
+                <!--<input type="search" size="" placeholder="Busqueda" />-->
+            </div>
+            <div class="user-wrapper">
+                <img src="../img/icon/user.png" width="40px" height="40px" alt="">
+                <div>
+                    <h4>Administrador</h4>
+                    <small>Super Admin</small>
+                </div>
+            </div>
+        </header>
+
+    <main>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="Listado">Edición de productos</h3>
+            </div>
+            <div class= "busqueda">
+                <h4 class="Listado">Busqueda</h4>
+                <input type="text" class="formscontrols" placeholder= "Nombre del producto">
+                <input type="text" class="formscontrols" placeholder= "Código del producto">
+                <input type="text" class="formscontrols" placeholder= "Referencia del producto">
+                <input type="text" class="formscontrols" placeholder= "Marca del producto">
+                <input type="text" class="formscontrols" placeholder= "Proveedor del producto">
+                <input type="text" class="formscontrols" placeholder= "Lugar de almacenamiento">
+            </div>
+
+        <div class="table-responsive">
+            <table class="table mb-0">
+                <thead>
+                    <tr>
+                        <th scope="col">N°</th>
+                        <th scope="col">Código del producto</th>
+                        <th scope="col">Nombre del producto</th>
+                        <th scope="col">Marca</th>
+                        <th scope="col">Referencia</th>
+                        <th scope="col">Valor unitario</th>
+                        <th scope="col">Proveedor</th>
+                        <th scope="col">Almacenamiento</th>
+                        <th scope="col">Edición</th>
+                        <th scope="col">Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>TV8692603</td>
+                        <td>TV SAMSUNG 65" Pulgadas 165.1 cm  4K-UHD QLED Plano Smart TV</td>
+                        <td>Samsung</td>
+                        <td>65Q80AA</td>
+                        <td> $ 4.599.900</td>
+                        <td>Electronic S.A</td>
+                        <td>Bodega de Seguridad 1</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+                     <tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>TV7161325</td>
+                        <td>Televisor LG 65 Pulgadas LED 4K Ultra HD Smart TV</td>
+                        <td>LG</td>
+                        <td>65UP7750</td>
+                        <td>2799900</td>
+                        <td>Semic S.A.S</td>
+                        <td>Bodega de Seguridad 1</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+                     <tr>
+                        <th scope="row">3</th>
+                        <td>TV7640538</td>
+                        <td>Televisor Samsung 58 pulgadas LED 4K Ultra HD Smart TV</td>
+                        <td>Samsung</td>
+                        <td>UN58TU8000KXZL</td>
+                        <td>2349900</td>
+                        <td>Electronic S.A</td>
+                        <td>Bodega de Seguridad 1</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>C8766200</td>
+                        <td>Portátil Gamer Asus Tuf Gaming F15 FX506 15.6 pulgadas Intel Core i5 8GB 512GB</td>
+                        <td>Asus</td>
+                        <td>FX506LH-HN002T</td>
+                        <td>3329900</td>
+                        <td>Semic S.A.S</td>
+                        <td>Bodega de Seguridad 2</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+
+                    </tr>
+
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>C8787384</td>
+                        <td>MacBook Air 13,3" Pulgadas MQD32E/A Intel Core I5- 8 GB ram- Disco Estado Solido 128GB- Gris</td>
+                        <td>MAC</td>
+                        <td>MQD32E/A</td>
+                        <td>3559000</td>
+                        <td>Electronic S.A</td>
+                        <td>Bodega de Seguridad 2</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+
+                     <tr>
+
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>W8237985</td>
+                        <td>Smartwatch Huawei Watch GT2 46mm</td>
+                        <td>Huawei</td>
+                        <td>Watch GT2</td>
+                        <td>649900</td>
+                        <td>Maiket</td>
+                        <td>Bodega de Seguridad 3</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+                     <tr>
+
+                    <tr>
+                        <th scope="row">7</th>
+                        <td>W8627526</td>
+                        <td>Apple Watch Series 3 38 mm</td>
+                        <td>Apple</td>
+                        <td>MTF02CL/A</td>
+                        <td>1139900</td>
+                        <td>Electronic S.A</td>
+                        <td>Bodega de Seguridad 3</td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/edit_black_24dp.svg" class="edit"></a></td>
+                        <td><a href="./edit_product.html"><img src="../img/icon/delete_black_24dp.svg" class="delete"></a></td>
+                     <tr>
+
+
+    </main>
+
+</body>
+
+</html>
